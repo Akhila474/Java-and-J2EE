@@ -99,11 +99,11 @@ public class Storage
 	
 	
 			System.out.println("Enter publisher of the book to obtain its details");
-			String pub=sc.next();
+			String publisher1=sc.next();
 			for(Map.Entry<Integer,Book> setb:s1)
 			{
 				Book b=setb.getValue();
-				if(b.publisher.contains(pub))
+				if(b.publisher.contains(publisher1))
 				{
 					System.out.println(b);
 				}
