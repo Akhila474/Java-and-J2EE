@@ -87,11 +87,11 @@ public class Storage
 			}
 	
 			System.out.println("Enter title of the book to obtain its details");
-			String tit=sc.next();
+			String title1=sc.next();
 			for(Map.Entry<Integer,Book> setb:s1)
 			{
 				Book b=setb.getValue();
-				if(b.title.contains(tit))
+				if(b.title.contains(title1))
 				{
 					System.out.println(b);
 				}
@@ -110,11 +110,11 @@ public class Storage
 			}
 	
 			System.out.println("Enter title of the book to modify the publisher details");
-			String tit1=sc.next();
+			String title2=sc.next();
 			for(Map.Entry<Integer,Book> setb:s1)
 			{
 				Book b=setb.getValue();
-				if(b.title.contains(tit1))
+				if(b.title.contains(title2))
 				{
 					System.out.println("Current publisher details : "+b.publisher);
 					System.out.println("Enter new publisher");
